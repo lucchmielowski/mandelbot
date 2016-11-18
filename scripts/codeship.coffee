@@ -1,5 +1,4 @@
 module.exports = (robot) ->
-  robot.receive /give me the app status/
   robot.respond /ship ?([\w.\-_]+) is (.*)/i, (msg) ->
     ship_project = msg.match[1].trim()
     ship_uuid = msg.match[2].trim()
